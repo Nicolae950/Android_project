@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay_nume"
+        app:layout_constraintBottom_toTopOf="@id/lay_prenume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/numele">
+
+        </TextView>
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+        </Space>
+
+        <EditText
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/edit_login"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay_prenume"
+        app:layout_constraintBottom_toTopOf="@id/lay_email"
+        app:layout_constraintTop_toBottomOf="@+id/lay_nume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/prenumele">
+
+        </TextView>
+
+        <Space
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+        </Space>
+
+        <EditText
+            android:layout_width="166dp"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:id="@+id/edit_prenume"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lay_prenume"
+        app:layout_constraintBottom_toTopOf="@id/lay_nickname">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/email">
+
+        </TextView>
+        <Space
+            android:layout_width="115dp"
+            android:layout_height="match_parent">
+
+        </Space>
+        <EditText
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/edit_email"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor,TextFields">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay_nickname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lay_email"
+        app:layout_constraintBottom_toTopOf="@id/lay_parola">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/creati_nickname">
+
+        </TextView>
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+        </Space>
+
+        <EditText
+            android:layout_width="166dp"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_nickname"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay_parola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lay_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/lay_nickname">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/creeaza_o_parola">
+
+        </TextView>
+        <Space
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+        </Space>
+
+        <EditText
+            android:layout_width="169dp"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:id="@+id/edit_parola"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/lay_parola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lay_butoane">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/confirma_parola">
+
+        </TextView>
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+        </Space>
+        <EditText
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/edit_confirmare"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay_butoane"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lay_confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_anuleaza"
+            android:text="@string/anuleaza"
+            android:onClick="clickAnuleaza_creare"/>
+        <Space
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_creeaza"
+            android:text="@string/creaza_cont"
+            android:onClick="clickCreaza"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Proiect</string>
+    <string name="vezi_anunturi">Vezi Anunturi</string>
+    <string name="posteza_anunt">Posteza Anunt</string>
+    <string name="continut">Continut : </string>
+    <string name="titlu">Titlu : </string>
+    <string name="anunt_valabil_pana_in_data_de">Anunt valabil pana in data de :</string>
+    <string name="adresa">Adresa : </string>
+    <string name="pentru_a_posta_anunturi_trebuie_sa_va_loga_ti">Pentru a posta anunturi trebuie sa va loga-ti !</string>
+    <string name="creaza_cont">Creaza Cont</string>
+    <string name="log_in">LOG IN</string>
+    <string name="login">Login (Email) :</string>
+    <string name="password">Password :</string>
+    <string name="anuleaza">Anuleaza</string>
+    <string name="adauga">Adauga</string>
+    <string name="numele">Numele : </string>
+    <string name="prenumele">Prenumele : </string>
+    <string name="email">Email : </string>
+    <string name="creati_nickname">Creati un Nickname : </string>
+    <string name="creeaza_o_parola">Creeaza o parola : </string>
+    <string name="confirma_parola">Confirma parola : </string>
+    <string name="creeaza">Creeaza Cont</string>
+    <string name="anunturi">Anunturi : </string>
+    <string name="data_postarii">Data postarii : </string>
+    <string name="utilizator">Utilizator : </string>
+    <string name="nickname">Nickname : </string>
+</resources>
